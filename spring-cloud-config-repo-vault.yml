@@ -1,3 +1,5 @@
-spring:
+secrets:
   datasource:
-    username: admin
+    host: localhost # This property is read by config server as native
+    username: admin # This property is read by config server from git repo
+    # password: twinkle This property is created in vault and read by config server
